@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #211a29;
+    background-image: url("./images/bg-stars.svg");
+    background-repeat: no-repeat;
+    font-family: "Red Hat Text", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 6.14px;
+    text-align: center;
+    color: #fff;
+}
+
+.hills {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+main {
+    margin: 0 24px;
+}
+
+.counter-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 54px;
+
+}
+
+.days-box, .hours-box, .seconds-box, .minutes-box {
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.days, .hours, .seconds, .minutes {
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: -1.08px;
+    text-align: center;
+    color: #fb5e84;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-span {
+    padding: 0 11px 0;
+    background-color: #343650;
+}
+
+.bottom-span {
+    padding: 0 11px 0;
+    background-color: #343650;
+    border-bottom: 4.7px black solid;
+    border-radius: 0 0 8px 8px;
+}
+
+hr {
+    height: 0.5px;
+    color: #000;
+    border: 0;
+}
+
+p {
+    font-size: 7px;
+    font-weight: bold;
+    letter-spacing: 2.96px;
+    text-align: center;
+    color: #8385a9;
+    margin-top: 9px;
+}
