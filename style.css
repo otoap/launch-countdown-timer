@@ -47,6 +47,7 @@ main {
 .days-box, .hours-box, .second-box, .minutes-box {
     border-radius: 4px;
     overflow: hidden;
+    position: relative;
 }
 
 .days, .hours, .seconds, .minutes {
@@ -111,7 +112,28 @@ p {
     padding: 0.9rem;
 }
 
+.box::before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #191a23;
+    transform: translate(-3px, 30px);
+    z-index: 2;
+}
 
+.box::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #191a23;
+    z-index: 2;
+    right: -3px;
+    top: 3rem;
+}
 
 footer {
     width: 100%;
