@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 62.5%;
 }
 
 body {
@@ -17,7 +18,7 @@ body {
 }
 
 h1 {
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: bold;
     letter-spacing: 6.14px;
     text-align: center;
@@ -31,25 +32,25 @@ h1 {
 }
 
 main {
-    margin: 0 24px;
+    margin: 0 2.4rem;
 }
 
 .counter-box {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px;
-    margin-top: 54px;
+    gap: 1.5rem;
+    margin-top: 5.4rem;
 
 }
 
-.days-box, .hours-box, .seconds-box, .minutes-box {
+.days-box, .hours-box, .second-box, .minutes-box {
     border-radius: 4px;
     overflow: hidden;
 }
 
 .days, .hours, .seconds, .minutes {
-    font-size: 36px;
+    font-size: 3.6rem;
     font-weight: bold;
     letter-spacing: -1.08px;
     text-align: center;
@@ -61,15 +62,21 @@ main {
 }
 
 .top-span {
-    padding: 0 11px 0;
+    padding: 0 1.1rem 0;
     background-color: #343650;
+    opacity: 0.75;
+    overflow: hidden;
+    height: 3.3rem;
+    position: relative;
 }
 
 .bottom-span {
-    padding: 0 11px 0;
+    padding: 0 1.1rem 0;
     background-color: #343650;
-    border-bottom: 4.7px black solid;
+    border-bottom: 0.47rem black solid;
     border-radius: 0 0 8px 8px;
+    overflow: hidden;
+    height: 3.3rem;
 }
 
 hr {
@@ -78,11 +85,48 @@ hr {
     border: 0;
 }
 
+span p {
+    font-size: 3.6rem;
+    font-weight: bold;
+    letter-spacing: -1.08px;
+    text-align: center;
+    color: #fb5e84;
+    padding: 0;
+}
+
+.top-span p {
+    transform: translateY(1.7rem);
+}
+
+.bottom-span p {
+    transform: translateY(-1.4rem);
+}
+
 p {
-    font-size: 7px;
+    font-size: 0.7rem;
     font-weight: bold;
     letter-spacing: 2.96px;
     text-align: center;
     color: #8385a9;
-    margin-top: 9px;
+    padding: 0.9rem;
+}
+
+
+
+footer {
+    width: 100%;
+    background-image: url("./images/pattern-hills.svg");
+    padding: 9.5rem 12rem 4.8rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    background-position: right;
+}
+
+.socials {
+    display: flex;
+    gap: 3.2rem;
+    align-items: center;
+    justify-content: center;
 }
