@@ -152,3 +152,51 @@ footer {
     align-items: center;
     justify-content: center;
 }
+
+a img:hover {
+    filter: brightness(0) saturate(100%) invert(52%) sepia(93%) saturate(2093%) hue-rotate(312deg) brightness(101%) contrast(97%);
+}
+
+@media (min-width: 1440px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .counter-box {
+        margin-top: 10.4rem;
+    }
+
+    span p {
+        font-size: 8rem;
+    }
+
+    .top-span, .bottom-span {
+        height: 7rem;
+        width: 14.8rem;
+    }
+
+    .top-span p {
+        transform: translateY(3.7rem);
+    }
+
+    .bottom-span p {
+        transform: translateY(-3.4rem);
+    }
+
+    .box::before{
+        width: 12px;
+        height: 12px;
+        transform: translate(-3px, 6.4rem);
+    }
+
+    .box::after {
+        width: 12px;
+        height: 12px;
+        top: 6.4rem;
+    }
+
+    p {
+        font-size: 1.4rem;
+        padding: 1.4rem;
+    }
+}
